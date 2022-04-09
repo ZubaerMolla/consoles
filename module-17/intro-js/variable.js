@@ -1,0 +1,9 @@
+var price = 21;
+var age = 23;
+var temparature = 37;
+var weight = 60;
+var name = "sadar uddin";
+var address = "vooter goli";
+var shcool = 'ideal'
+var pass = true;
+var subscribed = false;
