@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .field{
+            border: 1px solid red;
+        }
+        .field:hover .bat{
+            transform: rotate(-60deg);
+            transform-origin: top right;
+
+        }
+        .bat{
+            height: 300px ;
+            transition: transform 2s;
+        }
+        .ball{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50px;
+            position: relative;
+            left: 240px;
+            
+
+            transition: transform 1s ease-out;
+        }
+        .field:hover .ball{
+            transform: translate(500px, -300px); /*comma is important in css to indicate different field*/
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="field">
+        <img class="bat" src="0bab8b8e73c0092a2d427410a65c8ab6.png" alt="This is image of bat">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>
