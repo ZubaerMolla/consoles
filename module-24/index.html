@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #second-title{
+            background-color: chocolate;
+        } */
+        /* .blog {
+            border: 2px solid orange;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 5px;
+        } */
+    </style>
+</head>
+<body>
+    <h2>Blog list</h2>
+    <ul id="blog-list">
+        <li>blog-1</li>
+        <li>blog-2</li>
+        <li>blog-3</li>
+        <li>blog-4</li>
+        
+    </ul>
+    <section id="blogs" class="blogs">
+        <article class="blog">
+            <h3 id="second-title">how are you</h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quaerat corrupti assumenda nostrum commodi est. Earum blanditiis assumenda quisquam recusandae corrupti excepturi, atque doloribus cupiditate architecto, est possimus et deleniti vitae voluptates qui quam incidunt in soluta iusto unde illum error! Iure, pariatur aliquam in dolore sit expedita quis eum?
+        </article>
+        <article class="blog">
+            <h3>my name is Arman Molla</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, aliquid?</p>
+        </article>
+        <article class="blog">
+            <h3 id="third-title">I am hero</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta laudantium minima tempore saepe placeat architecto. Beatae vero quia sequi!</p>
+        </article>
+        <article class="blog">
+            <h3 id="fourth-title">whats up</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem impedit aut ut sint nostrum repudiandae, voluptate reiciendis doloremque nihil aliquam.</p>
+        </article>
+        <article id="special-blog">
+            <h3> whats up man</h3>
+            <p>heywhat up boy my name is jobaer</p>
+        </article>
+
+    </section>
+    <script>
+       const student = {name: 'Jobaer Molla', age: 23, height: 68}
+        //console.log(document.body);
+       /* const blogTitle = document.getElementsByTagName('h3');
+            for (const h3 of blogTitle) {
+                console.log(h3.innerText); 
+            } */
+           
+            //creat and add element by using js
+
+
+            
+
+
+            const li = document.createElement('li');
+            li.innerText = 'blog-5';
+            // where to
+            const ul = document.getElementById('blog-list');
+            ul.appendChild(li);
+
+            // add article
+            const article = document.createElement('article');
+            article.classList.add('blog');
+            const h3 = document.createElement('h3');
+            h3.innerText = 'my awesome blog - 5';
+            const p = document.createElement('p');
+            p.innerText = 'vitae hajime isayama is the contributor of attack on titan movie siries';
+            article.appendChild(h3);
+            article.appendChild(p);
+
+            //parent of article
+            const blogSec = document.getElementById('blogs');
+            blogSec.appendChild(article);
+
+            const secondTitle = document.getElementById
+            ('second-title');
+            secondTitle.style.textAlign = 'center';
+            const third = document.getElementById('third-title');
+            third.innerText = 'updated by JS';
+            third.style.backgroundColor = 'yellow';
+            third.style.padding = '10px'
+
+            const blogs = document.getElementsByClassName('blog');
+            for(const blog of blogs){
+                blog.style.border = '2px solid orange';
+                blog.style.borderRadius = '10px';
+                blog.style.margin = '5px';
+
+            }
+
+            
+
+    </script>
+</body>
+</html>
