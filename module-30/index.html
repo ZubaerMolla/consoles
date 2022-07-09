@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <main>
+     <h1 class="section-title">Account Management</h1>
+    <section class="container">
+        
+        <div class="img-box">
+            <img src="account.jpg" alt="">
+        </div>
+
+        <!-- calculation box -->
+        <div class="calc-box">
+             <div>
+                <div class="income-area">
+                    <h2 style="text-align: center;">Income</h2>
+                    <p>Income:
+                    <input class="input-field" id="income-input" type="text" ></p>
+                </div>
+                <br>
+                <div class="expenes">
+                    <h2 style="text-align: center;">Expenses</h2>
+                    <p>Food:
+                    <input class="input-field" id="food-input" type="text" name="">
+                    <br>
+                    <p>Rent:
+                        <input class="input-field" id="rent-input" type="text" name="" id="">
+                    <p>Clothes:
+                    <input class="input-field" id="clothes-input" type="text" name="" id=""></p>
+                    
+                    <button class="button" id="calc-button">Calculate</button>
+                </div>
+                <br>
+                <h2 style="text-align: center;">Total Expenses: <span id="expense-output">00</span></h2>
+                <h2 style="text-align: center;">Balance: <span id="total-balance">00</span></h2>
+           
+                <div class="saving-unit">
+                   <p>Save:</p>
+                   <input class="input-field" type="text" id="saving-input">
+                   <p style="margin-left: 8px;">%</p>
+                   <button class="button" id="saving-button"> Save</button>
+                </div>
+                <br>
+                <h2 style="text-align: center;">Saving Amount: <span id="saving-output">00</span></h2>
+                <h2 style="text-align: center;">Remaining Balance: <span id="remaining-output">00</span> </h2>
+             </div>
+        </div>
+        <script src="script.js"></script>
+    </section>
+ </main>
+ </body>
+ </html>

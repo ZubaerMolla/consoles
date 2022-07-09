@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;1,100&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(214, 211, 211);
+}
+.section-title{
+    text-align: center;
+    color: rgb(110, 126, 248);
+}
+.img-box{
+    height: 700px;
+    width: 500px;
+    background-color: red;
+    margin-right: 20px;
+}
+.img-box img{
+    height: 700px;
+    width: 500px; 
+}
+.calc-box{
+    height: 700px;
+    width: 450px;
+    background-color: rgb(244, 242, 242);
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#income-input{
+    margin-left: 5px;
+}
+#food-input{
+    margin-left: 26px;
+}
+#rent-input{
+    margin-left: 29px;
+}
+#cloth-input{
+    margin-left: 4px;
+}
+#saving-input{
+    margin-top: 15px;
+    height: 25px;
+    width: 70px;
+    margin-left: 5px;
+}
+#saving-button{
+    height: 30px;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+.input-field{
+    background-color: rgb(214, 211, 211);
+    width: 130px;
+    border: none;
+    height: 20px;
+}
+#calc-button{
+    width: 150px;
+    margin-left: 50px;
+}
+.saving-unit{
+    display: flex;
+}
+.button{
+    height: 40px;
+    color: white;
+    background-color: rgb(110, 126, 248);
+    border: none;
+    border-radius: 2px;
+    width: 120px;
+    font-weight: bold;
+}
