@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is delegate</h1>
+    <ul id="list-container">
+        <li class="item">lorem</li>
+        <li class="item">lorem</li>
+        <li class="item">lorem</li>
+        <li class="item">lorem</li>
+        <li class="item">lorem</li>
+        <li class="item">lorem</li>
+        <li class="item">lorem</li>
+        <li class="item">lorem</li>
+    </ul>
+    <button id="add-item">Add new item</button>
+
+    <script>
+        const items = document.getElementsByClassName('item')
+        for(const item of items) {
+            item.addEventListener('click', function(){
+                document.getElementById('list-container').removeChild(item);
+                //event.target.parentNode.removeChild(event.target)
+            })
+        }
+
+        document.getElementById('add-item').addEventListener('click', function(){
+            const li = document.createElement('li');
+            li.innerText = 'item is added'
+            const parent = document.getElementById('list-container');
+            parent.appendChild(li)
+        })
+    </script>
+</body>
+</html>
